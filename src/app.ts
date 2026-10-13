@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import { env } from './config/env.js';
 import { errorHandler, notFoundHandler } from './middlewares/error-middleware.js';
 import { ApiResponse } from './utils/api-response.js';
+import { apiRouter } from './routes/index.js';
 
 export const createApp = (): Application => {
   const app = express();
@@ -24,13 +25,8 @@ export const createApp = (): Application => {
     app.use(morgan(env.NODE_ENV === 'development' ? 'dev' : 'combined'));
   }
 
-  // Health check endpoint
-  app.get('/api/health', (req: Request, res: Response) => {
-    ApiResponse.success(res, 'Secure Notes API operational', {
-      uptime: process.uptime(),
-      timestamp: new Date().toISOString(),
-    });
-  });
+  // Master API router
+  app.use('/api', apiRouter);
 
   // Catch unhandled routes
   app.use(notFoundHandler);

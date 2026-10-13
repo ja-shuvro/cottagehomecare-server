@@ -13,10 +13,10 @@
 ---
 
 ## 2. Current Status
-- **Current Phase**: Phase 2 Complete (Database Modeling & Explicit Indexing Strategy)
-- **Next Phase**: Phase 3 (Authentication, Security & Password Hashing)
+- **Current Phase**: Phase 3 Complete (Authentication, Security & Password Hashing)
+- **Next Phase**: Phase 4 (RBAC & Notes REST API with Pagination)
 - **Active Git Branch**: `dev` in both `server` and `client` repos
-- **Last Updated**: Phase 2 completed, moving to Phase 3
+- **Last Updated**: Phase 3 completed, moving to Phase 4
 
 ---
 
@@ -42,7 +42,7 @@
 - [x] Initialize `/server` environment and TypeScript setup.
 - [x] Initialize `/client` environment and Vite setup.
 - [x] Implement Mongoose models with explicit `schema.index()`.
-- [ ] Implement JWT auth and bcrypt hashing.
+- [x] Implement JWT auth and bcrypt hashing.
 - [ ] Implement RBAC Notes REST API with pagination.
 - [ ] Implement Scenario 1 & 2 MongoDB Aggregation pipelines.
 - [ ] Implement Admin user management.
