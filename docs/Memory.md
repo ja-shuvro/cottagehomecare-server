@@ -13,10 +13,10 @@
 ---
 
 ## 2. Current Status
-- **Current Phase**: Phase 4 Complete (RBAC & Notes REST API with Pagination)
-- **Next Phase**: Phase 5 (Aggregation Pipelines - Scenario 1 & Scenario 2)
+- **Current Phase**: Phase 5 Complete (Aggregation Pipelines - Scenario 1 & Scenario 2)
+- **Next Phase**: Phase 6 (Admin User Management API)
 - **Active Git Branch**: `dev` in both `server` and `client` repos
-- **Last Updated**: Phase 4 completed, moving to Phase 5
+- **Last Updated**: Phase 5 completed, moving to Phase 6
 
 ---
 
@@ -44,7 +44,7 @@
 - [x] Implement Mongoose models with explicit `schema.index()`.
 - [x] Implement JWT auth and bcrypt hashing.
 - [x] Implement RBAC Notes REST API with pagination.
-- [ ] Implement Scenario 1 & 2 MongoDB Aggregation pipelines.
+- [x] Implement Scenario 1 & 2 MongoDB Aggregation pipelines.
 - [ ] Implement Admin user management.
 - [ ] Build clean frontend with auth, dashboard, admin, and aggregation views.
 - [ ] Audit indexes and query performance (`executionStats`).

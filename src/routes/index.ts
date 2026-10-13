@@ -1,6 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { authRoutes } from './auth-routes.js';
 import { noteRoutes } from './note-routes.js';
+import { postRoutes } from './post-routes.js';
+import { aggregationRoutes } from './aggregation-routes.js';
 import { ApiResponse } from '../utils/api-response.js';
 
 const apiRouter = Router();
@@ -14,5 +16,7 @@ apiRouter.get('/health', (req: Request, res: Response) => {
 
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/notes', noteRoutes);
+apiRouter.use('/posts', postRoutes);
+apiRouter.use('/aggregations', aggregationRoutes);
 
 export { apiRouter };
