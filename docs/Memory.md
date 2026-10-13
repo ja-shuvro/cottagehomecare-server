@@ -13,10 +13,10 @@
 ---
 
 ## 2. Current Status
-- **Current Phase**: Phase 3 Complete (Authentication, Security & Password Hashing)
-- **Next Phase**: Phase 4 (RBAC & Notes REST API with Pagination)
+- **Current Phase**: Phase 4 Complete (RBAC & Notes REST API with Pagination)
+- **Next Phase**: Phase 5 (Aggregation Pipelines - Scenario 1 & Scenario 2)
 - **Active Git Branch**: `dev` in both `server` and `client` repos
-- **Last Updated**: Phase 3 completed, moving to Phase 4
+- **Last Updated**: Phase 4 completed, moving to Phase 5
 
 ---
 
@@ -43,7 +43,7 @@
 - [x] Initialize `/client` environment and Vite setup.
 - [x] Implement Mongoose models with explicit `schema.index()`.
 - [x] Implement JWT auth and bcrypt hashing.
-- [ ] Implement RBAC Notes REST API with pagination.
+- [x] Implement RBAC Notes REST API with pagination.
 - [ ] Implement Scenario 1 & 2 MongoDB Aggregation pipelines.
 - [ ] Implement Admin user management.
 - [ ] Build clean frontend with auth, dashboard, admin, and aggregation views.
