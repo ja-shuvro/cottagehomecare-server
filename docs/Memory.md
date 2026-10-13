@@ -13,9 +13,10 @@
 ---
 
 ## 2. Current Status
-- **Current Phase**: Phase 0 Complete (Pre-build Documentation and Specifications)
-- **Next Phase**: Phase 1 (Project Foundation & Environment Setup)
-- **Last Updated**: Initial project setup
+- **Current Phase**: Phase 1 Complete (Foundation & Environment Setup)
+- **Next Phase**: Phase 2 (Database Modeling & Explicit Indexing Strategy)
+- **Active Git Branch**: `dev` in both `server` and `client` repos
+- **Last Updated**: Phase 1 completed, moving to Phase 2
 
 ---
 
@@ -38,8 +39,8 @@
 - [x] Create engineering standards `docs/Rules.md`.
 - [x] Create execution roadmap `docs/Phases.md`.
 - [x] Initialize `docs/Memory.md`.
-- [ ] Initialize `/server` environment and TypeScript setup.
-- [ ] Initialize `/client` environment and Vite setup.
+- [x] Initialize `/server` environment and TypeScript setup.
+- [x] Initialize `/client` environment and Vite setup.
 - [ ] Implement Mongoose models with explicit `schema.index()`.
 - [ ] Implement JWT auth and bcrypt hashing.
 - [ ] Implement RBAC Notes REST API with pagination.
